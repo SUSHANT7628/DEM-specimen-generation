@@ -1,0 +1,95 @@
+{
+  "psd": {
+    "curve": "astm_c778_graded_sand.csv",
+    "d_min_mm": 0.15,
+    "d_max_mm": 0.85,
+    "size_span_dmax_over_dmin": 5.666666666666667,
+    "d50_number_mm": 0.27227344238135615,
+    "d50_mass_mm": 0.366072098463003,
+    "max_abs_grading_error_pct_points_at_sieves": 0.8522961097142598
+  },
+  "seed": {
+    "n_particles": 625,
+    "timesteps": 61000,
+    "wall_clock_s": 19.2,
+    "porosity": 0.17606833790093568,
+    "void_ratio": 0.21369288983552417,
+    "z_mean_nonrattler": 3.730909090909091,
+    "rattler_fraction": 0.12,
+    "wall_stress_kPa": [
+      100.204,
+      100.204,
+      99.669,
+      99.67
+    ],
+    "ufr_mean": 1.697466391455536e-06,
+    "ufr_max": 1.874227492275054e-05
+  },
+  "tiled_specimen": {
+    "n_particles": 10000,
+    "tiles": [
+      4,
+      4
+    ],
+    "ufr_mean_immediately_after_tiling": 1.6893872855292662e-06,
+    "ufr_mean_after_relaxation": 7.947108436497488e-11,
+    "ufr_max_after_relaxation": 3.2463304867381777e-09,
+    "relaxation_timesteps": 6000,
+    "relaxation_wall_clock_s": 23.1,
+    "max_displacement_over_d50": 1.4805256537241217e-06,
+    "mean_displacement_over_d50": 1.056214392314183e-07,
+    "contact_force_change_mean_over_mean_force": 4.587341413757938e-06,
+    "contacts_kept_through_relaxation": 1.0,
+    "porosity": 0.17606833790093568,
+    "z_mean_nonrattler": 3.730909090909091,
+    "rattler_fraction": 0.12,
+    "wall_stress_kPa": [
+      100.204,
+      100.204,
+      99.67,
+      99.67
+    ],
+    "contacts_crossing_tile_boundaries": 468,
+    "boundary_force_max_rel_diff_vs_seed_wall": 1.001870725344348e-09,
+    "boundary_tangential_force_max": 0.0
+  },
+  "control_translation_tiling": {
+    "ufr_mean": 0.2253465988479437,
+    "ufr_max": 3.8230254106147514
+  },
+  "independent_check": {
+    "seed": {
+      "n_particles": 625,
+      "n_contacts": 989,
+      "contact_set_matches_geometry": true,
+      "normal_force_max_rel_error": 0.0,
+      "ufr_mean": 1.697466391460935e-06,
+      "ufr_max": 1.8742274922768532e-05,
+      "moment_ratio_mean": 7.158983745240712e-07
+    },
+    "specimen_10k": {
+      "n_particles": 10000,
+      "n_contacts": 16292,
+      "contact_set_matches_geometry": true,
+      "normal_force_max_rel_error": 0.0,
+      "ufr_mean": 7.947108466140673e-11,
+      "ufr_max": 3.2463304867381777e-09,
+      "moment_ratio_mean": 3.595554246247976e-11
+    }
+  },
+  "model": {
+    "dimension": "2-D discs",
+    "kn": 100000000.0,
+    "kt_over_kn": 0.75,
+    "kw": 200000000.0,
+    "mu": 0.5,
+    "rho": 2650.0,
+    "local_damping": 0.7,
+    "dt_s": 1.7566618015211703e-07,
+    "dt_critical_s": 8.783309007605851e-07,
+    "dt_over_dt_critical": 0.2,
+    "sigma0_kPa": 100.0,
+    "ufr_target": 0.0001
+  },
+  "total_wall_clock_s": 43.7
+}
